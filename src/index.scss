@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Crimson Pro", sans-serif;
+  background-color: #f4f5ff;
+  color: #142747;
+}
+
+.section-footer__title {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  border-bottom: 1px solid #43b97f;
+  line-height: 0.1rem;
+  margin-bottom: 5rem;
+}
+.section-footer__title--text {
+  background-color: #0a192f;
+  padding: 0 1rem;
+  font-size: 2rem;
+  padding: 0 20rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .section-footer__title--text {
+    padding: 0 2rem;
+  }
+}

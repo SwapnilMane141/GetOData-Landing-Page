@@ -1,0 +1,79 @@
+@import "./../variables.scss";
+
+.subscribeBtn {
+  margin: 4rem 0;
+  text-align: left;
+  // position: absolute;
+  // top: 40%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+
+  .emailBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+    @media only screen and (max-width: $bp-500) {
+      flex-direction: column;
+    }
+  }
+
+  .subscribeEmail {
+    padding: 1.5rem 1.5rem;
+    width: 30rem;
+    margin: 0 2rem 0 0;
+    // background-color: $color-mid-grey;
+    border-radius: 0.1rem;
+    border: 1px solid #89cff0;
+
+    @media only screen and (max-width: $bp-500) {
+      margin: 0 0;
+    }
+
+    &:focus,
+    &:active {
+      // border: none;
+      outline: none;
+    }
+  }
+
+  .invalid {
+    border: 1px solid red !important;
+  }
+
+  .subscribeBtn__Link {
+    background-image: linear-gradient(to right, #ff9898, #8054ff);
+    // border: 2px solid #e7bf3a;
+    color: #fff;
+    padding: 1.5rem 5rem;
+    -webkit-transition: all 0.2s;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    // width: 30%;
+    // margin: 2rem auto;
+    border-radius: 0.2rem;
+
+    @media only screen and (max-width: $bp-500) {
+      margin: 2rem auto;
+      width: 30rem;
+    }
+
+    &:hover {
+      color: #fcda68;
+    }
+  }
+}
+
+.thankYou {
+  color: #ff9898;
+  text-align: center;
+}
+
+.tryAgain {
+  color: red;
+  text-align: center;
+}

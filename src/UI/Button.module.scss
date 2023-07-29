@@ -1,0 +1,25 @@
+@import "./../variables.scss";
+
+.btn {
+  text-decoration: none;
+  border: none;
+  padding: 2rem 5rem;
+  color: $color-cream-white;
+  background-color: $color-cyan;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @media only screen and (max-width: $bp-600) {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    padding: 2rem 2rem;
+  }
+
+  &:hover {
+    background-color: $color-cyan-dark;
+  }
+}

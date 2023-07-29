@@ -1,0 +1,26 @@
+@import "./../variables.scss";
+
+.BuyButton {
+  background-image: linear-gradient(to right, #ff9898, #8054ff);
+  // border: 2px solid #e7bf3a;
+  color: #fff;
+  padding: 1.5rem 5rem;
+  -webkit-transition: all 0.2s;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  // width: 30%;
+  // margin: 2rem auto;
+  border-radius: 0.2rem;
+
+  @media only screen and (max-width: $bp-500) {
+    margin: 2rem auto;
+    width: 30rem;
+  }
+
+  &:hover {
+    color: #fcda68;
+  }
+}

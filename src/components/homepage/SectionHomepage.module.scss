@@ -1,0 +1,64 @@
+@import "./../../variables.scss";
+
+.section__homepage {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-1200) {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 5rem 0;
+  }
+}
+
+.headings {
+  // position: absolute;
+  // top: 20%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: left;
+
+  @media only screen and (max-width: $bp-1200) {
+    width: 70%;
+    text-align: center;
+  }
+
+  .primaryHeading {
+    margin: 3rem 0;
+    font-size: 5rem;
+    // text-align: center;
+
+    @media only screen and (max-width: $bp-500) {
+      font-size: 3rem;
+    }
+  }
+
+  .secondaryHeading {
+    // text-align: center;
+  }
+}
+
+.emailInput {
+  margin: 4rem 0;
+}
+.productShowcase {
+  // width: 20%;
+}
+.productShowcaseImage {
+  height: 50rem;
+  width: auto;
+  border-radius: 1rem;
+
+  @media only screen and (max-width: $bp-600) {
+    height: 30rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

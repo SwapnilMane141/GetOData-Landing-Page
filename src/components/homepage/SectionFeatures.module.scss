@@ -1,0 +1,147 @@
+@import "./../../variables.scss";
+
+.section_project_details {
+  //   background-color: #b7bdfe;
+  padding: 5rem 0 15rem 0;
+  position: relative;
+  z-index: -999;
+}
+
+.section-portfolio__title {
+  width: 100%;
+  text-align: center;
+  color: $color-cyan;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: $bp-700) {
+    font-size: 1.6rem;
+  }
+}
+
+.section-portfolio__mainTitle {
+  width: 50%;
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem auto;
+
+  @media only screen and (max-width: $bp-700) {
+    font-size: 3rem;
+    width: 80%;
+  }
+
+  @media only screen and (max-width: $bp-500) {
+    font-size: 2rem;
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-portfolio__title--text {
+    padding: 0 2rem;
+  }
+}
+
+.project-details {
+  position: relative;
+  // margin: 10rem 15rem;
+  margin: 10rem 10rem;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+/* Media query for tablets and smaller screens */
+@media screen and (max-width: $bp-700) {
+  .project-details {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    margin: 5rem; /* Adjust the margin as per your design requirements */
+  }
+}
+
+/* Media query for mobile devices and smaller screens */
+@media screen and (max-width: $bp-500) {
+  .project-details {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    margin: 2rem; /* Adjust the margin as per your design requirements */
+  }
+}
+
+.project-info {
+  width: auto;
+  height: 100%;
+  z-index: 100;
+  // margin: 10% auto;
+
+  @media only screen and (max-width: $bp-700) {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.project-info__title {
+  //   color: #ffd64d;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 4rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: $color-cyan;
+}
+
+.description__text {
+  margin-bottom: 3rem;
+}
+
+.project-info__description {
+  background-color: #fff;
+  padding: 1.5rem 1.5rem;
+  // border-radius: 0.3rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  line-height: 2rem;
+  height: 40rem;
+  box-shadow: 1.5rem 2rem 6rem rgba(0, 0, 0, 0.2);
+
+  @media only screen and (max-width: $bp-700) {
+    height: auto;
+  }
+}
+
+.project_info_image {
+  height: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  border-radius: 1rem;
+}
+
+.project-info__stack {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-info__stack--list {
+  list-style: none;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.project-info__links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.project-info__links--anchor {
+  margin-right: 2rem;
+}
+
+.project-info__links--anchor-img {
+  height: 2rem;
+  width: auto;
+}

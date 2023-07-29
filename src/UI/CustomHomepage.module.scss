@@ -1,0 +1,84 @@
+@import "./../variables.scss";
+
+.section-homepage {
+  .heading {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+    @media only screen and (max-width: $bp-1000) {
+      top: 45%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media only screen and (max-width: $bp-800) {
+      top: 50%;
+    }
+
+    @media only screen and (max-width: $bp-600) {
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      width: 70%;
+    }
+
+    &__primary {
+      color: white;
+      font-size: 6rem;
+      width: 60%;
+      margin-bottom: 2rem;
+
+      @media only screen and (max-width: $bp-1200) {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: $bp-1000) {
+        font-size: 10rem;
+      }
+
+      @media only screen and (max-width: $bp-900) {
+        width: 90%;
+      }
+
+      @media only screen and (max-width: $bp-800) {
+        width: 100%;
+        font-size: 3rem;
+      }
+
+      @media only screen and (max-width: $bp-600) {
+        text-align: center;
+        font-size: 2.5rem;
+      }
+    }
+
+    &__secondary {
+      color: $color-cream-white;
+      margin-bottom: 2rem;
+      font-weight: 400;
+      line-height: 3rem;
+      width: 60%;
+
+      @media only screen and (max-width: $bp-1200) {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: $bp-1000) {
+        font-size: 3rem;
+        line-height: 5rem;
+      }
+
+      @media only screen and (max-width: $bp-800) {
+        width: 100%;
+        font-size: 2.5rem;
+      }
+
+      @media only screen and (max-width: $bp-600) {
+        text-align: center;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
