@@ -1,0 +1,30 @@
+@import "./../variables.scss";
+
+.sectionTerms {
+  // margin-top: 10rem;
+  padding: 5rem 5rem;
+}
+
+.main-logo {
+  // margin-left: 20%;
+  // margin-top: 2rem;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: $bp-1000) {
+    margin-left: 0%;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    margin-left: 5%;
+  }
+
+  &__img {
+    height: 4rem;
+    width: auto;
+
+    @media only screen and (max-width: $bp-500) {
+      height: 3rem;
+      width: auto;
+    }
+  }
+}

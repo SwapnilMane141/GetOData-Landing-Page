@@ -4,7 +4,7 @@ const BuyButton = (props) => {
   return (
     <a
       className={classes.BuyButton}
-      href="https://getodata.lemonsqueezy.com/checkout/buy/27785124-2dc0-489c-b367-1986864bd6e5"
+      href="https://getodata.lemonsqueezy.com/checkout/buy/df91c8da-6393-4acc-b9d8-50e8ba7f2ae4"
       target="_blank"
       rel="noreferrer"
       //   onClick={submitEmailHandler}

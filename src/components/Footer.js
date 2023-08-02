@@ -16,7 +16,7 @@ const Footer = (props) => {
       <ul className={classes["navigation__list"]}>
         <li className={classes["navigation__item"]}>
           <NavLink to="/home" className={classes["navigation__link"]}>
-            Subscribe
+            Buy Now
           </NavLink>
         </li>
         <li className={classes["navigation__item"]}>
@@ -29,12 +29,12 @@ const Footer = (props) => {
           </a>
         </li>
         <li className={classes["navigation__item"]}>
-          <NavLink to="/home" className={classes["navigation__link"]}>
+          <NavLink to="/privacy" className={classes["navigation__link"]}>
             Privacy
           </NavLink>
         </li>
         <li className={classes["navigation__item"]}>
-          <NavLink to="home" className={classes["navigation__link"]}>
+          <NavLink to="/terms" className={classes["navigation__link"]}>
             Terms of Service
           </NavLink>
         </li>
@@ -42,7 +42,7 @@ const Footer = (props) => {
       <ul className={classes["navigation__list--social"]}>
         <li className={classes["navigation__item"]}>
           <a
-            href="https://twitter.com/SwapBuilds"
+            href="https://twitter.com/GetOData"
             className={classes["navigation__link"]}
           >
             <img

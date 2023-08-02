@@ -13,11 +13,13 @@ const Header = () => {
     <header className={styles.header}>
       <nav className={styles.navigation}>
         <div className={styles["main-logo"]}>
-          <img
-            src={logoImg}
-            alt="Swapnil Mane Logo"
-            className={styles["main-logo__img"]}
-          />
+          <a href="/" className={styles["logo-link"]}>
+            <img
+              src={logoImg}
+              alt="Swapnil Mane Logo"
+              className={styles["main-logo__img"]}
+            />
+          </a>
         </div>
 
         <ul className={styles["navigation__list"]}>
@@ -27,7 +29,7 @@ const Header = () => {
               className={styles["navigation__link"]}
               onClick={() => {
                 window.scrollTo({
-                  top: document.documentElement.scrollHeight / 3,
+                  top: document.documentElement.scrollHeight / 2,
                   behavior: "smooth",
                 });
               }}
@@ -40,7 +42,7 @@ const Header = () => {
               onClick={handleScrollToElement}
               className={`${styles["navigation__link"]} ${styles["navigation__link--Resume"]}`}
             >
-              Subscribe
+              Buy Now
             </button>
           </li>
         </ul>

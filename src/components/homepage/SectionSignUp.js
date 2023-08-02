@@ -30,7 +30,7 @@ const SectionSignUp = (props) => {
         <h4 className={classes["secondaryHeading"]}>
           Pay Once, Use Forever. Hurry up, The Lifetime deals ends soon!
         </h4>
-        <div className={classes.pricing}>$9.49</div>
+        <div className={classes.pricing}>$4.99</div>
         <div className={classes.EmailInput}>
           <BuyButton></BuyButton>
         </div>
